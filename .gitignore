@@ -1,0 +1,40 @@
+# Anchor
+.anchor
+target/
+**/*.rs.bk
+test-ledger/
+
+# Node
+node_modules/
+dist/
+package-lock.json
+yarn.lock
+*.log
+
+# IDL
+*.json
+
+# OS
+.DS_Store
+.vscode/
+.idea/
+
+# Solana
+.config/
+
+# Rust
+debug/
+target/
+Cargo.lock
+
+# Environment
+.env
+.env.local
+
+# Build artifacts
+build/
+
+# Test artifacts
+*.log
+test-results/
+
