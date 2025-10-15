@@ -72,29 +72,29 @@ pub mod alioth_amm {
     }
 
     /// Initialize farming pool for LP token staking
-    pub fn initialize_farm(
-        ctx: Context<InitializeFarm>,
-        reward_per_slot: u64,
-        start_slot: u64,
-        end_slot: u64,
-    ) -> Result<()> {
-        instructions::farming::initialize_farm_handler(ctx, reward_per_slot, start_slot, end_slot)
-    }
+    // pub fn initialize_farm(
+    //     ctx: Context<InitializeFarm>,
+    //     reward_per_slot: u64,
+    //     start_slot: u64,
+    //     end_slot: u64,
+    // ) -> Result<()> {
+    //     instructions::farming::initialize_farm_handler(ctx, reward_per_slot, start_slot, end_slot)
+    // }
 
     /// Stake LP tokens to earn rewards
-    pub fn stake(ctx: Context<Stake>, amount: u64) -> Result<()> {
-        instructions::farming::stake_handler(ctx, amount)
-    }
+    // pub fn stake(ctx: Context<Stake>, amount: u64) -> Result<()> {
+    //     instructions::farming::stake_handler(ctx, amount)
+    // }
 
     /// Unstake LP tokens
-    pub fn unstake(ctx: Context<Unstake>, amount: u64) -> Result<()> {
-        instructions::farming::unstake_handler(ctx, amount)
-    }
+    // pub fn unstake(ctx: Context<Unstake>, amount: u64) -> Result<()> {
+    //     instructions::farming::unstake_handler(ctx, amount)
+    // }
 
     /// Claim farming rewards
-    pub fn claim_rewards(ctx: Context<ClaimRewards>) -> Result<()> {
-        instructions::farming::claim_rewards_handler(ctx)
-    }
+    // pub fn claim_rewards(ctx: Context<ClaimRewards>) -> Result<()> {
+    //     instructions::farming::claim_rewards_handler(ctx)
+    // }
 
     /// Multi-hop swap through multiple pools
     pub fn multi_hop_swap(

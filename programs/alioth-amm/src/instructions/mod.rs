@@ -12,7 +12,7 @@ pub use add_liquidity::*;
 pub use remove_liquidity::*;
 pub use swap::*;
 pub use flash_loan::*;
-pub use farming::*;
+pub use farming::{InitializeFarm, Stake, Unstake, ClaimRewards};
 pub use multi_hop::*;
 pub use admin::*;
 

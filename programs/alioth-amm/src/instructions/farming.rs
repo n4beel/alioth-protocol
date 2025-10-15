@@ -304,10 +304,12 @@ pub struct Unstake<'info> {
     )]
     pub reward_vault: Account<'info, TokenAccount>,
 
+    pub reward_mint: Account<'info, Mint>,
+
     #[account(
         init_if_needed,
         payer = user,
-        associated_token::mint = farming_pool.reward_mint,
+        associated_token::mint = reward_mint,
         associated_token::authority = user,
     )]
     pub user_reward_token: Account<'info, TokenAccount>,
@@ -442,10 +444,12 @@ pub struct ClaimRewards<'info> {
     )]
     pub reward_vault: Account<'info, TokenAccount>,
 
+    pub reward_mint: Account<'info, Mint>,
+
     #[account(
         init_if_needed,
         payer = user,
-        associated_token::mint = farming_pool.reward_mint,
+        associated_token::mint = reward_mint,
         associated_token::authority = user,
     )]
     pub user_reward_token: Account<'info, TokenAccount>,
